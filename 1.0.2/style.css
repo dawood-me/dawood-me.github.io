@@ -12,7 +12,7 @@
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   
-  --glass-bg: rgba(15, 23, 42, 0.85);
+  --glass-bg: rgba(15, 23, 42, 0.8);
   --glass-border: rgba(255, 255, 255, 0.08);
 }
 
@@ -50,7 +50,7 @@ body {
 .blob-1 { top: -100px; right: -100px; background: rgba(56, 189, 248, 0.12); }
 .blob-2 { top: 900px; left: -150px; background: rgba(129, 140, 248, 0.1); }
 
-/* Navigation Header */
+/* Navigation */
 .header-wrapper {
   position: sticky;
   top: 20px;
@@ -88,13 +88,13 @@ body {
 .nav-links ul {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 28px;
 }
 
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -285,15 +285,14 @@ body {
 
 .text-cyan { color: var(--primary); }
 .text-green { color: var(--whatsapp-color); }
-.text-purple { color: var(--accent); }
-
 .glass-badge strong { display: block; font-size: 0.82rem; color: #fff; }
 .glass-badge small { font-size: 0.7rem; color: var(--text-muted); }
 
 .badge-top-right { top: -20px; right: -30px; }
 .badge-bottom-left { bottom: 20px; left: -40px; }
 
-/* Section Headers */
+/* About Bento Section */
+.about-section { padding: 90px 0; }
 .section-header { margin-bottom: 50px; }
 .section-header.center { text-align: center; }
 
@@ -307,9 +306,6 @@ body {
 
 .section-header h2 { font-size: 2.3rem; font-weight: 800; color: #fff; }
 .section-header h2 span { color: var(--primary); }
-
-/* Bento Section */
-.about-section { padding: 90px 0; }
 
 .bento-grid {
   display: grid;
@@ -371,7 +367,7 @@ body {
 .stat-item h2 { font-size: 2.5rem; color: var(--primary); font-weight: 800; }
 .stat-item p { font-size: 0.85rem; }
 
-/* Services Section */
+/* Services Section Grid */
 .services-section { padding: 90px 0; background: rgba(11, 15, 25, 0.5); }
 
 .services-grid {
@@ -416,132 +412,6 @@ body {
 
 .service-list i { color: var(--primary); font-size: 0.78rem; }
 
-/* Experience Section Timeline */
-.experience-section { padding: 90px 0; }
-
-.timeline-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  padding-left: 30px;
-  border-left: 2px solid var(--bg-card-border);
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: -37px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--primary);
-  box-shadow: 0 0 12px var(--primary);
-}
-
-.timeline-content {
-  background: var(--bg-card);
-  border: 1px solid var(--bg-card-border);
-  padding: 24px 28px;
-  border-radius: 20px;
-}
-
-.time-period {
-  font-family: 'Fira Code', monospace;
-  color: var(--primary);
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.timeline-content h3 { font-size: 1.2rem; color: #fff; margin: 6px 0 2px 0; }
-.timeline-content h4 { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; font-weight: 500; }
-.timeline-content p { font-size: 0.88rem; color: #cbd5e1; line-height: 1.6; }
-
-/* Skills Section Tags */
-.skills-section { padding: 90px 0; background: rgba(11, 15, 25, 0.5); }
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.skill-category-card {
-  background: var(--bg-card);
-  border: 1px solid var(--bg-card-border);
-  padding: 28px;
-  border-radius: 24px;
-}
-
-.skill-category-card h3 { font-size: 1.1rem; color: #fff; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
-
-.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-
-.skill-tags span {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #cbd5e1;
-  padding: 6px 14px;
-  border-radius: 30px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-/* ENHANCED CTA BANNER */
-.cta-banner-section { padding: 60px 0; }
-
-.cta-box-glow {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
-  border: 1px solid var(--primary-glow);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(56, 189, 248, 0.08);
-  border-radius: 32px;
-  padding: 50px;
-  text-align: center;
-}
-
-.cta-tag {
-  color: var(--primary);
-  font-family: 'Fira Code', monospace;
-  font-size: 0.85rem;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.cta-content h2 { font-size: 2.2rem; color: #fff; margin-bottom: 14px; font-weight: 800; }
-.cta-content p { color: var(--text-muted); font-size: 1rem; max-width: 650px; margin: 0 auto 32px auto; line-height: 1.6; }
-
-.cta-actions {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.cta-btn {
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-}
-
-.btn-cta-whatsapp { background: var(--whatsapp-color); color: #fff; box-shadow: 0 4px 20px var(--whatsapp-glow); }
-.btn-cta-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 8px 25px var(--whatsapp-glow); }
-
-.btn-cta-phone { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15); color: #fff; }
-.btn-cta-phone:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-3px); }
-
-.btn-cta-email { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; }
-.btn-cta-email:hover { transform: translateY(-3px); box-shadow: 0 8px 25px var(--primary-glow); }
-
 /* Contact Section */
 .contact-section { padding: 90px 0; }
 
@@ -559,7 +429,13 @@ body {
 .contact-info-col h2 span { color: var(--primary); }
 .contact-info-col p { color: var(--text-muted); line-height: 1.6; margin-bottom: 32px; }
 
-.method-item { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.method-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
 .link-item { text-decoration: none; }
 
 .method-item i {
@@ -576,7 +452,6 @@ body {
 
 .method-item i.green-icon { color: var(--whatsapp-color); background: rgba(37, 211, 102, 0.1); }
 .method-item i.blue-icon { color: #0a66c2; background: rgba(10, 102, 194, 0.1); }
-.method-item i.dark-icon { color: #fff; background: rgba(255, 255, 255, 0.1); }
 
 .method-item small { display: block; color: var(--text-muted); font-size: 0.75rem; }
 .method-item strong { color: #fff; font-size: 0.95rem; }
@@ -629,15 +504,13 @@ body {
 /* Responsive Grid Adjustments */
 @media (max-width: 992px) {
   .hero-container, .bento-grid, .contact-card-wrapper { grid-template-columns: 1fr; }
-  .services-grid, .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
   .badge-top-right, .badge-bottom-left { display: none; }
   .hero-title { font-size: 2.4rem; }
 }
 
 @media (max-width: 640px) {
-  .services-grid, .skills-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .nav-links { display: none; }
-  .cta-box-glow { padding: 30px 20px; }
-  .cta-actions { flex-direction: column; }
 }
